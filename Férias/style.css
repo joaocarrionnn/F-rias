@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    background-color: #C0D6DF;
+    font-family: "Oswald", serif;
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.container {
+    background-color: #DBE9EE;
+    border-radius: 15px;
+    width: 880px; 
+    height: 700px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(116, 116, 116, 0.2); 
+}
+
+header h1{
+    display: flex;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    padding-top: 20px;
+}
+
+
+header{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 98%;
+    width: 98%;
+    padding-bottom: 20px;
+}
+
+.texto{
+    padding-top: 140px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    
+}
+
+.opcoes a {
+    text-decoration: none;
+    color: white ;
+}
+
+
+.treino, .muie, .pubg {
+    background-color: #4F6D7A;
+    height: 380px;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.treino:hover, .muie:hover, .pubg:hover {
+    transform: scale(1.05);
+    background-color: #3A545D; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    color: #C0D6DF;
+}
+
+.pubg img{
+    height: 250px;
+}
+
+.muie img{
+    height: 190px;
+    padding-bottom: 50px;
+}
+
+.treino img{
+    height: 230px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
