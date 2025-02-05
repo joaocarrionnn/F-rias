@@ -1,11 +1,11 @@
-*{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-
 }
 
-body{
-    background-image: url(../img/Pubg-hd-Wallpapers.jpg);
+body {
+    background-image: url(../img/fundo3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Oswald", serif;
@@ -15,35 +15,132 @@ body{
     align-items: center; 
 }
 
-.container{
-    
-    width: 880px; 
-    height: 700px;
+.container {
+    width: 100%; 
+    height: 100%;
     display: flex;
-    justify-content:center;
-    
-    border-radius: 12px; 
-    
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
 }
 
-header{
-    backdrop-filter: blur(8px);
-    border: 1px solid rgb(46, 45, 45);
-    max-width: 770px;
-    max-height: 770px;
+.coisas{
+    font-size: 20px;
+}
+
+header {
+    height: 97%;
+    width: 97%;
     border-radius: 12px; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-size: 20px;
     color: aliceblue;
+    
 }
 
-.foto{
+header h1 {
+    margin-top: 80px;
+}
+
+/* Estilo dos botões */
+.btn {
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Botão maior */
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; /* Texto maior */
+    margin-top: 20px; /* Espaçamento */
+    cursor: pointer;
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+/* Estilos específicos para cada botão */
+.academia button {
+    background-color: #000fe0; /* Verde para Academia */
+}
+
+.amigos button {
+    background-color: #FF9800; /* Laranja para Amigos */
+}
+
+.barrinha button {
+    background-color: #00aa1c; /* Azul para Barrinhas */
+}
+
+/* Efeito hover para todos os botões */
+.academia button:hover {
+    background-color: #0033a1; /* Verde mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.amigos button:hover {
+    background-color: #FF5722; /* Laranja mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.barrinha button:hover {
+    background-color: #008116; /* Azul mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+/* Estilo inicial do conteúdo */
+.content {
+    opacity: 0; /* Começa invisível */
+    height: 0; /* Altura inicial zero */
+    overflow: hidden; /* Esconde o conteúdo enquanto está invisível */
+    transition: opacity 0.5s ease, height 0.5s ease; /* Transição suave */
+    border: 1px solid rgb(128, 147, 189);
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+}
+
+/* Quando a classe 'show' é adicionada, o conteúdo aparece */
+.content.show {
+    opacity: 1; /* Torna visível */
+    height: auto; /* Ajusta a altura automaticamente */
+}
+
+/* Estilo das imagens */
+.fade-image {
+    width: 100%; /* Ajusta a largura da imagem ao container */
+    max-width: 300px; /* Define um tamanho máximo para as imagens */
+    filter: grayscale(100%); /* Preto e branco inicialmente */
+    transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out; /* Transição suave para cor e zoom */
+}
+
+.fade-image:hover {
+    filter: grayscale(0%); /* Remove o preto e branco ao passar o mouse */
+}
+
+/* Centralização das caixas e botões */
+.conteudo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  
+    justify-content: space-around; /* Espaçamento uniforme entre as caixas */
+    gap: 30px;
 }
 
+.academia, .amigos, .barrinha {
+    gap: 20px;
+    max-height: 700px;
+    max-width: 300px; /* Define um tamanho fixo para as caixas */
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column; /* Alinha itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente os itens dentro das caixas */
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.academia img, .amigos img , .barrinha img{
+   border-radius: 10px;
+   margin-top: 20px;
+}
+
+.academia button, .amigos button , .barrinha button{
+   width: 100%; /* Botões ocupam toda a largura da caixa correspondente */
+}
