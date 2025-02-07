@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(Férias/img/wp1822339--mclaren-p1-wallpapers.jpg);
+    background-image: url(img/wp1822339--mclaren-p1-wallpapers.jpg);
     font-family: "Oswald", serif;
     background-size: cover;
     height: 100vh; 
@@ -81,7 +81,7 @@ header {
 }
 
 .treino, .muie, .pubg {
-    background-image: url(../Férias/img/laranja3.jpg);
+    background-image: url(../img/laranja3.jpg);
     height: 380px;
     width: 240px;
     justify-content: center;
